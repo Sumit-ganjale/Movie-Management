@@ -1,0 +1,20 @@
+version: '2'
+services:
+    musicmanagement:
+        image: musicmanagement-1.0.0:latest
+
+        env_file:
+          - ./application.properties
+        ports:
+            - 30001:8080
+
+    #mysql:
+    #    image: mysql:5.7.19
+    #    container_name: mysql
+    #    volumes:
+    #        - /home/docker/volumes/myapp/mysql/:/var/lib/mysql/
+    #    environment:
+    #        - MYSQL_USER=BILLING_11_0_0_CLM
+    #        - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    #        - MYSQL_DATABASE=myapp
+    #    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8
