@@ -88,10 +88,12 @@ public class MovieManagerImpl implements IMovieManager {
 	private Movie processMovies(Movies mov) {
 		Movie mov1 = new Movie();
 		List<String> genreList = mov.getGenre();
-		mov1.setGenre(genreList.toArray().toString());
+		String genres=String.join(",", genreList);
+		mov1.setGenre(genres);
 		mov1.setDirector(mov.getDirector());
 		mov1.setImdb_score(mov.getImdb_score());
 		mov1.setName(mov.getName());
+		mov1.setId(mov.getId());
 		mov1.setPopularity(mov.getPopularity());
 		return mov1;
 	}
