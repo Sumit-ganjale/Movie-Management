@@ -67,4 +67,4 @@ Schemas
 Solution for scaling
 1.We will User Kubernetes for scaling as it is an open-source container management tool which holds the responsibilities of container deployment, scaling & descaling of containers & load balancing. Being the Google’s brainchild, it offers excellent community and works brilliantly with all the cloud providers. So, we can say that Kubernetes is not a containerization platform, but it is a multi-container management solution.
 2.For Image creation will use docker
-3.Please Find DockerFile,Docker-compose.yml file and Kubernetes.yml file for same.
+3.Please Find DockerFile,Docker-compose.yml file and Kubernetes.yml file for same in containerisation folder.
