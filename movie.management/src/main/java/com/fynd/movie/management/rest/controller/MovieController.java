@@ -16,10 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException.BadRequest;
 
-import com.fynd.movie.management.entity.Movie;
 import com.fynd.movie.management.entity.Movies;
-import com.fynd.movie.management.interfaces.ILoginService;
-import com.fynd.movie.management.interfaces.IMovieManager;
+import com.fynd.movie.management.service.ILoginService;
+import com.fynd.movie.management.service.IMovieManager;
 
 @RestController
 @RequestMapping(path = "/movies")

@@ -1,0 +1,15 @@
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+   <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+   <property name="hibernate.connection.url">jdbc:oracle:thin:@172.17.139.105:1521/toolkit</property>
+   <property name="hibernate.connection.username">BILLING_11_0_0_CLM</property>
+   <property name="hibernate.connection.password">BILLING_11_0_0_CLM</property>
+   <property name="hibernate.hbm2ddl.auto">update</property>
+   <property name="show_sql">false</property>
+   <property name="hibernate.current_session_context_class">thread</property>
+   <mapping class="com.fynd.movie.management.entity.MOVIE"/>
+   <mapping class="com.fynd.movie.management.entity.UserMaster"/>
+</session-factory>
+</hibernate-configuration>
